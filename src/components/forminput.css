@@ -1,0 +1,29 @@
+
+.input-box {
+    padding: 15px;
+    margin: 0 0; 
+    box-shadow: 4px 2px 2px solid #f49382;
+    
+}
+small{
+    text-align: center;
+}
+span{
+    font-size: 10px;
+    margin-bottom: 50px;
+    color: red;
+    visibility: hidden;
+    text-align: center;
+}
+.submitButton{
+    visibility: visible;
+}
+.input-box:invalid[focused="true"]{
+    border: 3px solid red;
+}
+.input-box:invalid[focused="true"] ~ span{
+    visibility:visible;
+}
+.input-box:invalid[focused="true"] ~ .submitButton{
+    visibility:hidden;
+}
